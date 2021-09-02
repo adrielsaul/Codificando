@@ -1,0 +1,33 @@
+body {
+    background-color: violet;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Azeret Mono', monospace;
+    color: yellow;
+}
+
+main {
+    margin-left: 30%;
+}
+
+select {
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+#radioCod {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+.gif {
+    margin-top: 30px;
+    max-width: 400px ;
+    max-height: 225px;
+    margin-left: 40px;
+}

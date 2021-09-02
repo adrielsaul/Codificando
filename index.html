@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Escolha um tipo de codificador</h1>
+    </header>
+    <main>
+
+        <select onchange="myFunction()" id="selecionaCifra">
+            <option value="" disabled selected>Escolha</option>
+            <option value="cesar">Cifra de César</option>
+            <option value="base64">Base 64</option>
+        </select>
+        <form id="radioCod" onchange="a()">
+            <input type="radio" id="x" name="xOuy" checked="checked" value="x">
+            <label for="x">Codificar</label><br>
+            <input type="radio" id="y" name="xOuy" value="y">
+            <label for="y">Decodificar</label><br>
+        </form>
+        <section>
+            <div id="cesar">
+
+                <input type="number" default="0" id="chavinha" onkeyup="a()" placeholder="Digite a chave"><br>
+                <textarea name="cesar" id="inputCesar" placeholder="Digite o texto aqui" onkeyup="a()" cols="30"
+                    rows="5"></textarea>
+                <textarea id="cesarResultado" placeholder="Seu resultado" cols="30" rows="5" class="sol"></textarea>
+
+            </div>
+            <div id="base64">
+                <textarea name="base64" id="inputBase64" placeholder="Digite o texto aqui" onkeyup="b()" cols="30"
+                    rows="5"></textarea>
+                <textarea id="base64Resultado" placeholder="Seu resultado" cols="30" rows="5" class="sol"></textarea>
+            </div>
+        </section>
+        <img src="./maquina.gif" class="gif">
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
